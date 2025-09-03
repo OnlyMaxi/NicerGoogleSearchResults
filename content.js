@@ -2,8 +2,6 @@ const centerCol = document.querySelector("#center_col");
 
 chrome.storage.sync.get("preferences", data => {
     const preferences = data.preferences || {};
-    console.log(preferences);
-    console.log(preferences.removeAIO);
 
     if (preferences.removeAIO) {
         console.log("removeAIO found");
